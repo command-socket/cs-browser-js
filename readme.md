@@ -1,18 +1,28 @@
-# JavaScript Module Template
-This repository serves as an easy-start template for JavaScript/TypeScript NPM packages. 
+# CommandSocket - JS Browser Client
+An implementation of a CommandSocket client written for the browser.
 
-Simply clone the repository into a directory:
+### [Find @command-socket/browser-client on NPM.](https://www.npmjs.com/package/@command-socket/browser-client)
 
-```bash
-$ git clone git@github.com:T99/js-module-template.git my-new-project
+## Table of Contents
+
+ - [Installation](#installation)
+ - [Basic Usage](#basic-usage)
+ - [Documentation](#documentation)
+ - [License](#license)
+
+## Installation
+Install from NPM with
+```
+$ npm install --save @command-socket/browser-client
 ```
 
-And then run the init script:
+## Basic Usage
+Basic usage instructions here.
 
-```bash
-$ ./init.py
-```
+## Documentation
+See the [wiki](https://github.com/command-socket/cs-js-browser-client/wiki) for full documentation.
 
-The init script will interactively prompt you for package information and then automatically build the package, correct and fill-in package information, and install the specified NPM packages already included in the provided `package.json`.
+## License
+@command-socket/browser-client is made available under the GNU General Public License v3.
 
-And that's it! Your project is ready to go.
+Copyright (C) 2019 Trevor Sears
