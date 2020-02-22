@@ -41,10 +41,6 @@ const paths = {
 
 let typescriptProject = typescript.createProject(paths.typescript.tsconfig);
 
-let upstreamProjectPaths = [
-	"/home/trevor/dev/projects/orgs/command-socket/javascript/cs-js-core/gulpfile.js"
-];
-
 // The default Gulp task.
 gulp.task("default", defaultTask);
 
@@ -90,20 +86,9 @@ function rebuild(done) {
 function buildJavaScriptPipeline(done) {
 	
 	return gulp.series(
-		compileUpstreamProjects,
 		compileTypeScript,
 		uglifyJavaScript
 	)(done);
-	
-}
-
-function compileUpstreamProjects(done) {
-	
-	let cbs = [];
-	
-	for (let project of upstreamProjectPaths) cbs.push(() => gulp.src(project).pipe(chug()));
-	
-	return gulp.parallel(cbs)(done);
 	
 }
 
